@@ -24,26 +24,32 @@ The pipeline is tested on MacOS operating system (`Tetrad GUI 6.7.1`) and Linux 
 
 ### Install
 Install the latest [release](https://pypi.org/project/dowhy/) using pip. 
-``
+```
 pip install dowhy
-``
+```
 
 Install the latest [release](https://pypi.org/project/dowhy/) using conda.
-``
+```
 conda install -c conda-forge dowhy
-``
+```
 
 
 # Demo
 ## Obtain Bayesian Network
 
-Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). 
+Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). Detailed tutorial is available at [here](https://rawgit.com/cmu-phil/tetrad/development/tetrad-gui/src/main/resources/resources/javahelp/manual/tetrad_tutorial.html)
 
->
-> aaa
->
+1. Load csv data
+```
+dx1 dx2 dx3 ... |AD
+-------------------
+0.1 0.0 0.9     | 1
+0.1 0.0 0.9     | 1
+0.5 3.0 5.1     | 0
+0.3 0.6 3.5     | 0
 
 
+```
 
 
 
