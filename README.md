@@ -60,8 +60,8 @@ dx3 -> AD
 ...
 ```
 
-## Estimate treatment effect
-1. Load Bayesian network and data. `causal_graph` is the Bayesian network derived from Tetrad.
+## Build causal model
+Load Bayesian network and data. `causal_graph` is the Bayesian network derived from Tetrad.
 ```
 import dowhy
 from dowhy import CausalModel
@@ -78,6 +78,25 @@ model=CausalModel(data=data,
               
 ```
 
+## Estimate treatment effect
+Identify estimand
+```
+identified_estimand=model.identify_effect(proceed_when_unidentifiable=True)
+```
+
+
+Estimate average treatment effect (ATE) and ATE among treated (ATT)
+```
+ estimate=model.estimate_effect(identified_estimand,
+                               method_name='backdoor.propensity_score_weighting',
+                                method_params={"weighting_scheme":"ips_normalized_weight"},
+                               target_units='att')
+```
+
+Hypothesis test on Fisher's Null. Test whether the ATE is random or not
+```
+res_random=model.refute_estimate(identified_estimand, estimate, method_name="random_common_cause")
+```
 
 
 
