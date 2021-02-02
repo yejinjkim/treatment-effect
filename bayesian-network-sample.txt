@@ -1,0 +1,6 @@
+1. v_dx1 --> v_AD
+2. v_dx2 --> v_AD
+3. v_dx3 --> v_AD
+4. v_dx1 --> v_dx3
+5. v_dx5 --> v_dx3
+6. v_dx4 --> v_dx3
