@@ -27,10 +27,22 @@ Install the latest [release](https://pypi.org/project/dowhy/) using pip.
 ``
 pip install dowhy
 ``
+
 Install the latest [release](https://pypi.org/project/dowhy/) using conda.
 ``
 conda install -c conda-forge dowhy
 ``
+
+
+# Demo
+## Obtain Bayesian Network
+
+Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). 
+
+>
+aaa
+>
+
 
 
 
