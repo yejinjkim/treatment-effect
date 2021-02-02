@@ -6,8 +6,14 @@ Estimate treatment effect of common comorbidities in Alzheimer's disease
 
 # Dependency
 - `python` 3.6+
-- `doWhy]`https://github.com/microsoft/dowhy
-- `Tetrad 6.7.1` https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/cmu/tetrad-gui/
+- `numpy`
+- `scipy`
+- `scikit-learn`
+- `pandas`
+- `networkx`
+- `matplotlib`
+- `doWhy` [0.5.1](https://github.com/microsoft/dowhy)
+- `Tetrad ` [6.7.1](https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/cmu/tetrad-gui/)
 # System Requirements
 ## Hardware Requirements
 This pipeline only requires a standard computing resource to support the `Tetrad` and `doWhy`. 
@@ -18,6 +24,15 @@ The pipeline is tested on MacOS operating system (`Tetrad GUI 6.7.1`) and Linux 
 
 ### Install
 Install the latest [release](https://pypi.org/project/dowhy/) using pip. 
+``
+pip install dowhy
+``
+Install the latest [release](https://pypi.org/project/dowhy/) using conda.
+``
+conda install -c conda-forge dowhy
+``
+
+
 
 
 
