@@ -38,7 +38,7 @@ conda install -c conda-forge dowhy
 
 ## Obtain Bayesian Network
 
-Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). Detailed tutorial is available at [here](https://rawgit.com/cmu-phil/tetrad/development/tetrad-gui/src/main/resources/resources/javahelp/manual/tetrad_tutorial.html)
+Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). Detailed tutorial is available at [here](https://rawgit.com/cmu-phil/tetrad/development/tetrad-gui/src/main/resources/resources/javahelp/manual/tetrad_tutorial.html).
 
 1. Load csv data (Data->File->Validate->Load)
 ```
@@ -61,7 +61,7 @@ dx3 -> AD
 ```
 
 ## Build causal model
-Load Bayesian network and data. `causal_graph` is the Bayesian network derived from Tetrad.
+Load Bayesian network and data. `causal_graph` is the Bayesian network derived from Tetrad. Details are at [sample notebook](https://github.com/yejinjkim/treatment-effect/blob/main/sample-code.ipynb).
 ```
 import dowhy
 from dowhy import CausalModel
