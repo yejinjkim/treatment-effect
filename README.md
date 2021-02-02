@@ -6,7 +6,7 @@ Estimate treatment effect of common comorbidities in Alzheimer's disease
 
 # Dependency
 - `python` 3.6+
-- `doWhy`[https://github.com/microsoft/dowhy]
+- `[doWhy]`(https://github.com/microsoft/dowhy)
 - `Tetrad 6.7.1` [https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/edu/cmu/tetrad-gui/]
 # System Requirements
 ## Hardware Requirements
