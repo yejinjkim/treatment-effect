@@ -39,7 +39,7 @@ conda install -c conda-forge dowhy
 
 Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). Detailed tutorial is available at [here](https://rawgit.com/cmu-phil/tetrad/development/tetrad-gui/src/main/resources/resources/javahelp/manual/tetrad_tutorial.html)
 
-1. Load csv data
+1. Load csv data (Data->File->Validate->Load)
 ```
 dx1 dx2 dx3 ... |AD
 -------------------
@@ -48,7 +48,15 @@ dx1 dx2 dx3 ... |AD
 0.5 3.0 5.1     | 0
 0.3 0.6 3.5     | 0
 
-
+```
+2. Add knowledge (e.g., tiers on temporality, black/white list)
+3. Learn search (We used Markov Blanket + PC method implemented in MBFS)
+4. Export the Bayesian Network via txt file via Graph option
+```
+dx1 -> dx2
+dx2 -> dxn
+dx3 -> AD
+...
 ```
 
 
