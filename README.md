@@ -40,7 +40,7 @@ conda install -c conda-forge dowhy
 Use `Tetrad` to derive Markov Blanket of outcome (e.g., Alzheimer's disease if the objective is to reduce Alzheimer's disease risk). 
 
 >
-aaa
+> aaa
 >
 
 
